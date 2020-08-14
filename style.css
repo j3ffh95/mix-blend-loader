@@ -19,3 +19,14 @@ body {
   width: 400px;
   max-width: 100%;
 }
+
+.loading-container::after {
+  background-color: #fff;
+  content: "";
+  mix-blend-mode: difference;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
