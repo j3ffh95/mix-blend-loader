@@ -27,8 +27,17 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  transform: scaleX(0);
+  transform-origin: center left;
   height: 100%;
   width: 100%;
+  animation: grow 5s linear infinite;
+}
+
+@keyframes grow {
+  to {
+    transform: scaleX(1);
+  }
 }
 
 h1 {
